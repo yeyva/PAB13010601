@@ -1,0 +1,59 @@
+<mat-toolbar class="toolbar"><!-- \\
+  <div class="button-container">
+    <button class="glow-on-hover" mat-button [matMenuTriggerFor]="menu">Менюшка</button>
+    <mat-menu #menu="matMenu">
+      <button class="sidebar" mat-menu-item [matMenuTriggerFor]="setting">настройки</button>
+      <button class="sidebar" mat-menu-item [matMenuTriggerFor]="meow">чето другое</button>
+    </mat-menu>
+
+    <mat-menu #setting="matMenu">
+      <button class="sidebar" mat-menu-item [matMenuTriggerFor]="profile">настройки профиля</button>
+      <button class="sidebar" mat-menu-item [matMenuTriggerFor]="lingua">языки</button>
+      <button class="sidebar" mat-menu-item [matMenuTriggerFor]="config">конфиденциальность</button>
+      <button class="sidebar" mat-menu-item>статистика</button>
+      <button class="sidebar" mat-menu-item>чето еще</button>
+    </mat-menu>
+    
+    <mat-menu #meow="matMenu">
+      <button class="sidebar" mat-menu-item>1</button>
+      <button class="sidebar" mat-menu-item>2</button>
+      <button class="sidebar" mat-menu-item>3</button>
+      <button class="sidebar" mat-menu-item>4</button>
+      <button class="sidebar" mat-menu-item>5</button>
+      <button class="sidebar" mat-menu-item>6</button>
+      <button class="sidebar" mat-menu-item>7</button>
+    </mat-menu>
+    
+    <mat-menu #profile="matMenu">
+      <button class="sidebar" mat-menu-item>Изменить аватарку</button>
+      <button class="sidebar" mat-menu-item>загрузить картинку</button>
+      <button class="sidebar" mat-menu-item>изменить описание</button>
+      <button class="sidebar" mat-menu-item>изменить подписки</button>
+      <button class="sidebar" mat-menu-item>не знаю шото еще</button>
+    </mat-menu>
+    
+    <mat-menu #lingua="matMenu">
+      <button class="sidebar" mat-menu-item>английский</button>
+      <button class="sidebar" mat-menu-item>китайский</button>
+      <button class="sidebar" mat-menu-item>украинский</button>
+      <button class="sidebar" mat-menu-item>немецкий</button>
+    </mat-menu>
+    
+    <mat-menu #config="matMenu">
+      <button class="sidebar" mat-menu-item>изменить пароль</button>
+      <button class="sidebar" mat-menu-item>изменить логин</button>
+      <button class="sidebar" mat-menu-item>шото еще</button>
+      <button class="sidebar" mat-menu-item>шото еще</button>
+    </mat-menu>
+  </div>-->
+  <div class="wrapper">
+    <div class="link_wrapper">
+      <button a href="#" mat-button (click)="openLoginDialog()">вход</button>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="link_wrapper">
+      <button a href="#" mat-button (click)="openRegistrationDialog()">Регистрация</button>
+    </div>
+  </div>
+</mat-toolbar>

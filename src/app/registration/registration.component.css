@@ -1,0 +1,135 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #7367F0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: linear-gradient(135deg, #F7A8B8, #F0E6E6);
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #4A47A3;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.gender-options {
+  display: flex;
+  align-items: center;
+}
+
+.gender-options input[type="radio"] {
+  margin-right: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+  background-color: #4A47A3;
+  color: #FFF;
+}
+
+button[type="submit"]:hover {
+  background-color: #7367F0;
+}
+
+
+.invalid-input {
+  animation: blink 1s infinite;
+}
+@keyframes circleAnimation {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  animation: circleAnimation 1.5s ease-out infinite;
+}
+
+.circle:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.circle:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.circle:nth-child(3) {
+  animation-delay: 0.6s;
+}
+@keyframes circleAnimation {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  animation: circleAnimation 1.5s ease-out infinite;
+}
+
+.circle:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.circle:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.circle:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.invalid-input {
+  animation: blink 1s infinite;
+}
+ 
+

@@ -1,0 +1,109 @@
+<mat-tab-group dynamicHeight animationDuration="1000ms" class="custom-tab-group">
+  <mat-tab label="1" class="custom-tab">
+    <div class="block"></div>
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <mat-label>номер</mat-label>
+        <input type="text"
+               placeholder="Pick one"
+               aria-label="Number"
+               matInput
+               [formControl]="myControl"
+               [matAutocomplete]="auto">
+        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+          <mat-option *ngFor="let option of filteredOptions | async" [value]="option">{{option}}</mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </form>
+  </mat-tab>
+ 
+  <mat-tab label="3" class="custom-bag"> 
+    <mat-grid-list cols="4" rowHeight="1:1">
+      <mat-grid-tile>
+        <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Шиба ину</mat-card-title>
+            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+          <mat-card-content>
+            <p>Шиба ину нунунуну</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+        <button mat-button>LIKE</button>
+      </mat-card>
+
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image2"></div>
+          <mat-card-title>Голден Ретривер</mat-card-title>
+          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://www.zooplus.pt/magazine/wp-content/uploads/2019/01/Captura-de-ecra%CC%83-2019-01-29-a%CC%80s-14.41.04.png" alt="Photo of a Golden">
+        <mat-card-content>
+          <p>
+           Голден голден голден
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>LIKE</button>
+        <button mat-button>LIKE</button>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image3"></div>
+          <mat-card-title>Кокер спаниель</mat-card-title>
+          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://biogroom.ru/wp-content/uploads/2022/04/ecs.jpg" alt="Photo of a Spaniel">
+        <mat-card-content>
+          <p>
+           спаниель няняня
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>LIKE</button>
+        <button mat-button>LIKE</button>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image4"></div>
+          <mat-card-title> хаски</mat-card-title>
+          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://cdnn21.img.ria.ru/images/7e4/1/1e/1564071684_153:0:2884:2048_1920x0_80_0_0_5e037300df58911d06519bee038c0a08.jpg" alt="Photo of a haski">
+        <mat-card-content>
+          <p>хаски</p>
+          
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>LIKE</button>
+        <button mat-button>LIKE</button>
+      </mat-card>
+    </mat-grid-tile>
+ 
+  </mat-grid-list></mat-tab>

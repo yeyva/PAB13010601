@@ -1,0 +1,142 @@
+mat-grid-tile {
+    background-image: linear-gradient(to bottom right, #a7d4ff, #e24343);
+}
+mat-toolbar {
+  background: linear-gradient(to right, #ff00cc, #333399);
+  width: 100%;
+}
+.toolbar{
+  width: 100%;
+  position:absolute;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center; 
+  flex-grow: 100; 
+}
+
+.glow-on-hover {
+    width: 120px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #000000;
+    background: #ff00cc;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    
+    border-radius: 1000px; 
+ 
+  }
+ 
+  .glow-on-hover:before {
+    content: '';
+    color:#dbd0ff;
+    background: linear-gradient(50deg, #ff7171, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(10px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 100px;
+  }
+  
+  .glow-on-hover:active {
+    color: #000000;
+   
+
+  }
+  
+  .glow-on-hover:active:after {
+    background: transparent;
+  }
+  
+  .glow-on-hover:hover:before {
+    opacity: 1;
+    color: #ffffff;
+  }
+  
+  .glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:#ff00cc;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+ 
+  .sidebar {
+
+    background: linear-gradient(to bottom right, #ffccd9, #dbd0ff, #f2bdff, #ffffff); /* Градиентный фон */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
+    transition: width 0.3s ease; 
+    overflow-y: auto; 
+    z-index: 999;
+  }
+    
+  @keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+    
+  .sidebar ul li a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+    
+  .sidebar ul li a:hover {
+    color: #ff0000; 
+  }
+ 
+  .wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .link_wrapper {
+    margin-right: 2px; 
+  }
+  
+
+
+  button{
+    display: block;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    transition: all .35s;
+  }
+  
+  button:hover{
+    width: 200px;
+    border: 3px solid #2ecc71;
+    background: transparent;
+    color: #2ecc71;
+  }
+  
+  button:hover + .icon{
+    border: 3px solid #2ecc71;
+    right: -25%;
+  }

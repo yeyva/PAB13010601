@@ -1,0 +1,42 @@
+<head>
+  <title>Окно регистрации</title>
+  <link rel="stylesheet" href="registration.component.css">
+</head>
+<body>
+  <div class="container">
+    <form action="#" id="signin">
+      <h2>Регистрация</h2>
+      <div class="input-container">
+          <input type="text" placeholder="Введи Имя" required class="invalid-input">
+      </div>
+      <div class="input-container">
+          <input type="email" placeholder="Введи Email" required class="invalid-input">
+      </div>
+      <div class="input-container">
+          <input type="password" placeholder="Введи Пароль" required class="invalid-input">
+      </div>
+      <div class="input-container">
+        <label>Выберите пол:</label>
+        <div>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">♀ Женский</label>
+        
+        
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">♂ Мужской</label>
+        
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Средний</label>
+        </div>
+      </div>
+      <div class="input-container">
+          <label for="dob">Дата рождения:</label>
+          <input type="date" id="dob" name="dob" required>
+      </div>
+      <div class="button-container">
+          <button type="submit" button (click)="openClientDialog()">Зарегаться</button>
+      </div>
+      <p>Уже есть аккаунт? <a href="#">тыкни сюда если забув</a></p>
+    </form>
+  </div>
+</body>

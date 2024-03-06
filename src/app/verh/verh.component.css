@@ -1,0 +1,102 @@
+.mat-tab-group {
+  width: 2000;
+  height: 7000;
+
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);}
+  .block {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+    
+}
+mat-grid-tile {
+  background: lightblue;
+
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.custom-tab-group {
+  width: 100%; 
+  height: 100%;
+  background: linear-gradient(45deg, #ffaabf, #ac93f8); 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+ 
+}
+
+mat-grid-tile {
+  width: 300px; /* увеличиваем ширину */
+  height: 120px; /* увеличиваем высоту */
+  margin: 50px; /* добавляем отступ между плитками */
+  background: linear-gradient(to bottom right, #e27f98, #8f7bcc);
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+mat-tab-group {
+  padding: 30px;
+
+}
+mat-grid-tile:hover {
+  transform: translateY(-10px);
+}
+
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+.custom-tab {
+  background-color: #cf7b7b;
+  color: #000000;
+}
+.custom-bag mat-grid-list {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+mat-grid-list {
+  grid-gap: 16px;
+}
+.example-form {
+  min-width: 550px;
+  max-width: 780px;
+  width: 100%;
+  height: 100%;
+  z-index: 2; 
+}
+
+.example-full-width {
+  width: 100%;
+  height: 100%;
+}
+.example-card {
+  max-width: 250px;
+  max-width: 290px;
+ 
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+  z-index: 1;
+}
+.example-header-image2 {
+  background-image: url('https://wallbox.ru/resize/960x854/wallpapers/main2/201724/14976204235943dfc7479368.25253348.jpg');
+  background-size: cover;
+  z-index: 1;
+}
+.example-header-image3 {
+  background-image: url('https://masterpiecer-images.s3.yandex.net/5fba84c4ed46678:upscaled');
+  background-size: cover;
+  z-index: 1;
+}
+.example-header-image4 {
+  background-image: url('https://ethnomir.ru/upload/medialibrary/a8a/otkuda_vzyalis_khaski_1.jpg');
+  background-size: cover;
+  z-index: 1;
+}
+
